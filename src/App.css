@@ -1,0 +1,49 @@
+.container {
+  width: 100%;
+  padding: 20px;
+}
+
+.buttons {
+  margin-bottom: 20px;
+}
+
+.buttons button {
+  margin-right: 10px;
+}
+
+.list {
+  display: flex;
+  overflow: hidden;
+}
+
+.list-item {
+  width: 20vw;
+  height: 20vw;
+  margin-right: 10px;
+  transition: transform .3s ease-in-out;
+}
+
+.list-item-enter-done {
+  margin-left: 0;
+  transition: margin-left .3s ease-in-out;
+}
+
+.list-item-enter {
+  transform: translateX(-100%);
+}
+
+.list-item-enter-active {
+  transform: translateX(0);
+}
+
+.list-item-enter + .list-item-enter-done {
+  margin-left: 10px;
+}
+
+.list-item-exit {
+  transform: translateX(0);
+}
+
+.list-item-exit-active {
+  transform: translateX(100%);
+}
